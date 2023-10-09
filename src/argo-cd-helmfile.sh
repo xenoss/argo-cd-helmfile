@@ -406,7 +406,7 @@ case $phase in
     # TODO: support post process pipeline here
     ${helmfile} \
       template \
-      --skip-deps ${INTERNAL_HELMFILE_TEMPLATE_OPTIONS} \
+      ${INTERNAL_HELMFILE_TEMPLATE_OPTIONS} \
       --args "${INTERNAL_HELM_TEMPLATE_OPTIONS} ${HELM_TEMPLATE_OPTIONS}" \
       ${HELMFILE_TEMPLATE_OPTIONS}
     ;;
